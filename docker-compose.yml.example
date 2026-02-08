@@ -1,0 +1,19 @@
+services:
+  humanitz-server:
+    container_name: humanitz-server
+    build:
+      context: .
+    restart: unless-stopped
+    volumes:
+      - "./gamefiles:/server"
+    ports:
+      - "0.0.0.0:7777:7777/udp"
+      - "0.0.0.0:27015:27015/udp"
+    environment:
+      - ServerName="<YOUR-SERVERNAME-HERE>"
+      - ServerPassword="<YOUR-PASSWORD-HERE>"
+      - Port=7777
+      - QueryPort=27015
+      - UsePerfThreads=true
+      - NoAsynLoadingThread=true
+      - MaxServerPlayers=8
