@@ -20,8 +20,8 @@ Or delete the `gamefiles` folder and restart the container.
 ## Transfering Savegames
 
 In case you already have a savegame you wish to continue on the dedicated server: 
-- copy over the `Save_*.sav` and `*_Foliage` files to `gamefiles/HumanitZServer/Saved/SaveGames/SaveList/Default`.
-- adjust the `SaveName` setting to match your `.sav` file (e.g. `mygame` in case of `Save_mygame.sav`
+- copy over the `Save_*.sav` and `*_Foliage.sav` files to `gamefiles/HumanitZServer/Saved/SaveGames/SaveList/Default`.
+- adjust the `SaveName` setting to match your `.sav` file (e.g. `mygame` in case of `Save_mygame.sav`)
 - restart the server
 
 ## Settings
